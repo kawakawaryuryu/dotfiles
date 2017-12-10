@@ -1,0 +1,5 @@
+[user]
+	name = Ryutaro Kawaguchi
+	email = kawakawaryuryu@hotmail.co.jp
+[core]
+	excludesfile = ~/.gitignore_global
