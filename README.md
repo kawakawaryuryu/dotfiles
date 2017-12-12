@@ -4,6 +4,10 @@
 ## Initial setting
 
 ```
+# install GNU GLOBAL
+## Mac
+$ brew install global
+
 # install peco
 ## Mac
 $ brew install peco
