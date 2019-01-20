@@ -3,7 +3,7 @@
 
 ## Initial setting
 
-```
+```shell
 # install GNU GLOBAL
 ## Mac
 $ brew install global
