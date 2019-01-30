@@ -26,8 +26,10 @@ setopt no_beep
 export GREP_OPTIONS='--color=auto'
 
 # history
+setopt extended_history
+setopt share_history
 export HISTFILE=$HOME/.zsh_history
-export HISTSIZE=10000
+export HISTSIZE=100000
 export SAVEHIST=100000
 
 # invalidate Ctrl-s and Ctrl-q
