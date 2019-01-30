@@ -5,7 +5,6 @@ autoload -U compinit
 compinit
 
 # alias
-alias ls='ls -G'
 alias ll='ls -l'
 alias la='ls -la'
 
@@ -38,13 +37,5 @@ stty start undef    # Ctrl-q
 # Ctrl-w setting(delimit by slash)
 export WORDCHARS='*?_.[]~-=&;!#$%^(){}<>'
 
-# peco setting
-function peco-history-selection() {
-    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
-    CURSOR=$#BUFFER
-    zle reset-prompt
-}
-zle -N peco-history-selection
-bindkey '^R' peco-history-selection
-
+[ -f .zshrc_`uname` ] && source ~/.zshrc_`uname`
 source ~/.zshrc_local
