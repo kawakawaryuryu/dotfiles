@@ -9,6 +9,6 @@ do
         continue
     fi
 
-    ln -sf "$HOME/dotfiles/$file" "$HOME/$file"
+    ln -snf "$HOME/dotfiles/$file" "$HOME/$file"
     #echo $file
 done
