@@ -3,3 +3,9 @@
 	email = kawakawaryuryu@hotmail.co.jp
 [core]
 	excludesfile = ~/.gitignore_global
+[alias]
+    st = status
+    df = diff
+    co = checkout
+    b = checkout
+    cm = commit
