@@ -59,6 +59,9 @@ set shiftwidth=4
 set autoindent
 set smartindent
 
+" share to clipboard
+set clipboard=unnamed,autoselect
+
 filetype plugin indent on
 
 " GNU Global
