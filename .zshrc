@@ -8,8 +8,18 @@ compinit
 alias ll='ls -l'
 alias la='ls -la'
 
+# git
+autoload -Uz vcs_info
+setopt prompt_subst
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}"
+zstyle ':vcs_info:*' formats '%F{blue}%c%u[%b]%f'
+zstyle ':vcs_info:*' actionformats '[%b(%F{cyan}%a%f)]'
+precmd () { vcs_info }
+
 # prompt
-PROMPT='%F{green}%n%f@%F{magenta}%m%f:%~ %% '
+PROMPT='%F{green}%n%f@%F{magenta}%m%f:%~ ${vcs_info_msg_0_}%% '
 
 # completion
 zstyle ':completion:*:default' menu select=2
