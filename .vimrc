@@ -41,8 +41,11 @@ colorscheme molokai
 " syntax check
 syntax on
 
-" search highlight
+" search
+" highlight
 set hlsearch
+" incremental
+set incsearch
 
 " status line
 set laststatus=2
