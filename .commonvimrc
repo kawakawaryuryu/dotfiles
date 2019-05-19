@@ -1,0 +1,13 @@
+" search
+" highlight
+set hlsearch
+" incremental
+set incsearch
+
+" status line
+set laststatus=2
+set statusline=2
+set statusline=%F
+
+" share to clipboard
+set clipboard+=unnamed

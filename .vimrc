@@ -41,17 +41,6 @@ colorscheme molokai
 " syntax check
 syntax on
 
-" search
-" highlight
-set hlsearch
-" incremental
-set incsearch
-
-" status line
-set laststatus=2
-set statusline=2
-set statusline=%F
-
 " enable backspace key
 set backspace=indent,eol,start
 
@@ -62,9 +51,6 @@ set shiftwidth=4
 set autoindent
 set smartindent
 
-" share to clipboard
-set clipboard=unnamed,autoselect
-
 filetype plugin indent on
 
 " GNU Global
@@ -73,3 +59,6 @@ map <C-p> :cp<CR>
 map <C-g> :Gtags
 map <C-h> :Gtags -f %<CR>
 map <C-j> :GtagsCursor<CR>
+
+" load other config
+source ~/.commonvimrc
