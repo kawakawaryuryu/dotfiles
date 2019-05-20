@@ -19,7 +19,8 @@ zstyle ':vcs_info:*' actionformats '[%b(%F{cyan}%a%f)]'
 precmd () { vcs_info }
 
 # prompt
-PROMPT='%F{green}%n%f@%F{magenta}%m%f:%~ ${vcs_info_msg_0_}%% '
+PROMPT='%F{green}%n%f@%F{magenta}%m%f:%~ ${vcs_info_msg_0_}
+%% '
 
 # completion
 zstyle ':completion:*:default' menu select=2
