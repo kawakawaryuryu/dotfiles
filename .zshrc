@@ -26,6 +26,7 @@ PROMPT='%F{green}%n%f@%F{magenta}%m%f:%~ ${vcs_info_msg_0_}
 zstyle ':completion:*:default' menu select=2
 bindkey "^[[Z" reverse-menu-complete    # Shit-Tab
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # don't distinguish lowercase and uppercase
+source <(kubectl completion zsh) # kubectl
 
 # spell correction
 #setopt correct
