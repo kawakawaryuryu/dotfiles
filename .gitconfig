@@ -7,5 +7,7 @@
     st = status
     df = diff
     co = checkout
-    b = checkout
+    b = branch
+    ad = add
     cm = commit
+    p = push
