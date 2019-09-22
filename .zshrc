@@ -7,6 +7,7 @@ compinit
 # alias
 alias ll='ls -l'
 alias la='ls -la'
+alias g='git'
 
 # git
 autoload -Uz vcs_info
