@@ -28,7 +28,7 @@ zstyle ':completion:*:default' menu select=2
 bindkey "^[[Z" reverse-menu-complete    # Shit-Tab
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # don't distinguish lowercase and uppercase
 source <(kubectl completion zsh) # kubectl
-source <(kubesec completion zsh) # kubesec
+source <(ksec completion zsh) # kubesec
 
 # spell correction
 #setopt correct
