@@ -18,6 +18,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('leafgarland/typescript-vim')
   call dein#add('mattn/emmet-vim')
   call dein#add('hashivim/vim-terraform')
+  call dein#add('chr4/nginx.vim')
   let g:lightline = {
     \'colorscheme' : 'wombat'
     \}
