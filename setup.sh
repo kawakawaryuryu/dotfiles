@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# install only Mac
+if [ `uname | grep Darwin` ]; then
+    brew install global peco
+fi
+
 # zsh
 touch .zshrc_local
 mkdir -p .zsh/completion

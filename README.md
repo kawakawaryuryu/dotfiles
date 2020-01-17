@@ -4,17 +4,6 @@
 ## Initial setting
 
 ```shell
-# install GNU GLOBAL
-## Mac
-$ brew install global
-
-# install peco
-## Mac
-$ brew install peco
-
-# clone repository
-$ git clone git@github.com:kawakawaryuryu/dotfiles.git
-
 # setup
 ./setup.sh
 
