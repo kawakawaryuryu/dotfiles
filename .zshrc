@@ -1,5 +1,8 @@
 # Created by newuser for 5.3.1
 
+# fpath
+fpath=(~/.zsh/completion $fpath)
+
 # compinit
 autoload -U compinit
 compinit
