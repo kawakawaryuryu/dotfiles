@@ -4,7 +4,7 @@
 fpath=(~/.zsh/completion $fpath)
 
 # compinit
-autoload -U compinit
+autoload -Uz compinit
 compinit
 
 # alias
