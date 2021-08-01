@@ -11,3 +11,5 @@
     ad = add
     cm = commit
     p = push
+[init]
+	defaultBranch = main
