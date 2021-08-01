@@ -10,6 +10,19 @@ function peco-history-selection() {
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
 
+# ghq peco setting
+peco-src () {
+    local repo=$(ghq list | peco --query "$LBUFFER")
+    if [ -n "$repo" ]; then
+        repo=$(ghq list --full-path --exact $repo)
+        BUFFER="cd ${repo}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-src
+bindkey '^]' peco-src
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
