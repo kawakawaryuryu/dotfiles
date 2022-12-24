@@ -42,8 +42,13 @@ gh repo clone kawakawaryuryu/dotfiles
 brew bundle --file=~/.Brewfile_`hostname` -f
 ```
 
+7. (optional) export installed package list to Brewfile
+```bash
+brew bundle dump --file=~/.Brewfile_`hostname` -f
+```
+
 ## setup on WSL2
-same as from 1 to 6 of setup on Mac
+same as 1 to 6 of setup on Mac
 
 7. change shell
 ```shell
@@ -52,6 +57,17 @@ chsh -s /home/linuxbrew/.linuxbrew/bin/zsh
 ```
 
 ## setup on Windows
+same as 2 and 3 of setup on Mac
+
+3. install packages with winget_$(hostname).json
+```bash
+winget.exe import -i winget_$(hostname).json
+```
+
+4. (optional) export installed package list to winget.json file
+```bash
+winget.exe export -o winget_$(hostname).json
+```
 
 ## Reference
 - https://github.com/Shougo/dein.vim
