@@ -57,4 +57,5 @@ stty start undef    # Ctrl-q
 export WORDCHARS='*?_.[]~-=&;!#$%^(){}<>'
 
 [ -f .zshrc_`uname` ] && source ~/.zshrc_`uname`
+[ -f .zshrc_`hostname` ] && source ~/.zshrc_`hostname`
 source ~/.zshrc_local
