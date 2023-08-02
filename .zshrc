@@ -27,6 +27,12 @@ PROMPT='%F{green}%n%f@%F{magenta}%m%f:%~ ${vcs_info_msg_0_}
 %% '
 
 # completion
+if type brew &> /dev/null; then
+  fpath=($(brew --prefix)/share/zsh-completions $fpath)
+
+  autoload -Uz compinit
+  compinit
+fi
 zstyle ':completion:*:default' menu select=2
 bindkey "^[[Z" reverse-menu-complete    # Shit-Tab
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # don't distinguish lowercase and uppercase
