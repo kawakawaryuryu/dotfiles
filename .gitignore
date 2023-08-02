@@ -1,5 +1,3 @@
 .*_local
 /installer.sh
 .netrwhist
-.zsh/completion/_docker
-.zsh/completion/_docker-compose
