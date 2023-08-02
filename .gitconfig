@@ -13,9 +13,3 @@
     p = push
 [init]
 	defaultBranch = main
-[credential "https://github.com"]
-	helper = 
-	helper = !/home/linuxbrew/.linuxbrew/Cellar/gh/2.21.1/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/home/linuxbrew/.linuxbrew/Cellar/gh/2.21.1/bin/gh auth git-credential
