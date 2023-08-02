@@ -29,3 +29,9 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+
+# 1password CLI
+eval "$(op completion zsh)"; compdef _op op
+
+# IntelliJ IDEA PATH
+export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS":$PATH
