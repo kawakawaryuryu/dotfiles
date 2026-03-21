@@ -9,7 +9,13 @@
     configurationRevision = self.rev or self.dirtyRev or null;
     primaryUser = "ryu";
 
-    defaults.dock.autohide = true;
+    defaults = {
+      dock.autohide = true;
+      NSGlobalDomain = {
+        InitialKeyRepeat = 12;
+        KeyRepeat = 2;
+      };
+    };
 
     keyboard = {
       enableKeyMapping = true;
