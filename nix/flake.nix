@@ -21,19 +21,15 @@
       nix-darwin,
       ...
     }:
-    let
-      system = "aarch64-darwin";
-      pkgs = nixpkgs.legacyPackages.${system};
-    in
     {
-      homeConfigurations."ryu" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [ ./home.nix ];
-      };
-
       darwinConfigurations."ryumacbookair2026" = nix-darwin.lib.darwinSystem {
-        specialArgs = { inherit self; };
-        modules = [ ./nix-darwin/configuration.nix ];
+        specialArgs = {
+          inherit self;
+        };
+        modules = [
+          ./nix-darwin/configuration.nix
+          home-manager.darwinModules.home-manager
+        ];
       };
     };
 }
