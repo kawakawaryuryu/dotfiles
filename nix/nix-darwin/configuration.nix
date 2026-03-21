@@ -17,9 +17,14 @@
     defaults = {
       dock.autohide = true;
       NSGlobalDomain = {
+        # リピート入力認識までの時間
         InitialKeyRepeat = 12;
+        # キーのリピート速度
         KeyRepeat = 2;
       };
+
+      # 調べるを3本指でタップ
+      trackpad.TrackpadThreeFingerTapGesture = 2;
     };
 
     keyboard = {
@@ -63,4 +68,8 @@
     useUserPackages = true;
     users."ryu" = ../home-manager/home.nix;
   };
+
+  imports = [
+    ./homebrew.nix
+  ];
 }
