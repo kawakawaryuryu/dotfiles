@@ -18,11 +18,12 @@
     onActivation = {
       autoUpdate = false;
       upgrade = true;
-      # cleanup = "uninstall";  # Homebrew からの移行完了後に設定
     };
 
     casks = [
       "google-chrome"
+      "google-japanese-ime"
+      "alfred"
     ];
   };
 }

@@ -25,6 +25,10 @@
 
       # 調べるを3本指でタップ
       trackpad.TrackpadThreeFingerTapGesture = 2;
+
+      CustomUserPreferences = {
+
+      };
     };
 
     keyboard = {
