@@ -27,7 +27,35 @@
       trackpad.TrackpadThreeFingerTapGesture = 2;
 
       CustomUserPreferences = {
-
+        # キーボードショートカット
+        "com.apple.symbolichotkeys" = {
+          AppleSymbolicHotKeys = {
+            # 「Spotlight検索を表示」を⌥+Spaceに
+            "64" = {
+              enabled = true;
+              value = {
+                parameters = [
+                  32
+                  49
+                  524288
+                ];
+                type = "standard";
+              };
+            };
+            # 前の入力ソースを⌘+Spaceで選択
+            "60" = {
+              enabled = true;
+              value = {
+                parameters = [
+                  32
+                  49
+                  1048576
+                ];
+                type = "standard";
+              };
+            };
+          };
+        };
       };
     };
 
