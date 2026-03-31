@@ -54,6 +54,13 @@
                 type = "standard";
               };
             };
+            # Siriをfn+sで呼ぶ
+            "176" = {
+              enabled = false;
+              value = {
+                type = "SAE1.0";
+              };
+            };
           };
         };
       };
