@@ -26,6 +26,7 @@
       "google-japanese-ime"
       "alfred"
       "dropbox"
+      "1password"
     ];
   };
 }
