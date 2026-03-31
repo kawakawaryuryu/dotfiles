@@ -6,7 +6,12 @@
 {
   users.users.ryu.home = "/Users/ryu";
 
-  nixpkgs.hostPlatform = "aarch64-darwin";
+  nixpkgs = {
+    hostPlatform = "aarch64-darwin";
+    config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+      "1password-cli"
+    ];
+  };
   nix.enable = false;
 
   system = {
