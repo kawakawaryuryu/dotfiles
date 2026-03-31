@@ -25,6 +25,7 @@
       "google-drive"
       "google-japanese-ime"
       "alfred"
+      "dropbox"
     ];
   };
 }
