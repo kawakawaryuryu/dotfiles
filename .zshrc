@@ -39,6 +39,25 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # don't distinguish lowercas
 source <(kubectl completion zsh) # kubectl
 source <(ksec completion zsh) # kubesec
 
+###-begin-cdktf-completions-###
+#
+# yargs command completion script
+#
+# Installation: /Users/kawaryu/.npm/_npx/53ad3fe84cc9163d/node_modules/.bin/cdktf completion >> ~/.zshrc
+#    or /Users/kawaryu/.npm/_npx/53ad3fe84cc9163d/node_modules/.bin/cdktf completion >> ~/.zprofile on OSX.
+#
+_cdktf_yargs_completions()
+{
+  local reply
+  local si=$IFS
+  IFS=$'
+' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" /Users/kawaryu/.npm/_npx/53ad3fe84cc9163d/node_modules/.bin/cdktf --get-yargs-completions "${words[@]}"))
+  IFS=$si
+  _describe 'values' reply
+}
+compdef _cdktf_yargs_completions cdktf
+###-end-cdktf-completions-###
+
 # spell correction
 #setopt correct
 
@@ -65,3 +84,5 @@ export WORDCHARS='*?_.[]~-=&;!#$%^(){}<>'
 [ -f .zshrc_`uname` ] && source ~/.zshrc_`uname`
 [ -f .zshrc_`hostname` ] && source ~/.zshrc_`hostname`
 source ~/.zshrc_local
+
+[ -f "/Users/kawaryu/.ghcup/env" ] && . "/Users/kawaryu/.ghcup/env" # ghcup-env

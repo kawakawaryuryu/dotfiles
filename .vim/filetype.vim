@@ -5,4 +5,5 @@ augroup filetypedetect
     au BufRead, BufNewFile *.html setfiletype html
     au BufRead, BufNewFile *.yml *.yaml setfiletype yaml
     au BufRead, BufNewFile *.tf setfiletype terraform
+    au BufRead, BufNewFile *.hs setfiletype haskell
 augroup END
