@@ -26,6 +26,9 @@
       # 調べるを3本指でタップ
       trackpad.TrackpadThreeFingerTapGesture = 2;
 
+      # メニューバーの日付を秒まで表示
+      menuExtraClock.ShowSeconds = true;
+
       CustomUserPreferences = {
         # キーボードショートカット
         "com.apple.symbolichotkeys" = {
