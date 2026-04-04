@@ -125,6 +125,15 @@
       ];
       RunAtLoad = true;
     };
+
+    rectangle.serviceConfig = {
+      ProgramArguments = [
+        "/usr/bin/open"
+        "-a"
+        "Rectangle"
+      ];
+      RunAtLoad = true;
+    };
   };
 
   security.pam.services.sudo_local.touchIdAuth = true;
