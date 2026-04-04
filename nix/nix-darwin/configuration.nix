@@ -106,6 +106,27 @@
     };
   };
 
+  # ログイン時に起動
+  launchd.user.agents = {
+    chrome.serviceConfig = {
+      ProgramArguments = [
+        "/usr/bin/open"
+        "-a"
+        "Google Chrome"
+      ];
+      RunAtLoad = true;
+    };
+
+    terminal.serviceConfig = {
+      ProgramArguments = [
+        "/usr/bin/open"
+        "-a"
+        "Terminal"
+      ];
+      RunAtLoad = true;
+    };
+  };
+
   security.pam.services.sudo_local.touchIdAuth = true;
 
   programs.fish.enable = true;
