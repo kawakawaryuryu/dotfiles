@@ -1,8 +1,13 @@
 { config, pkgs, ... }:
 
 {
-  home.username = "ryu";
-  home.homeDirectory = "/Users/ryu";
+  home = {
+    username = "ryu";
+    homeDirectory = "/Users/ryu";
+    shellAliases = {
+      ll = "ls -l";
+    };
+  };
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -60,5 +65,8 @@
   };
 
   # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
+  programs = {
+    home-manager.enable = true;
+    fish.enable = true;
+  };
 }

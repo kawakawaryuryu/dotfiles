@@ -138,8 +138,6 @@
 
   security.pam.services.sudo_local.touchIdAuth = true;
 
-  programs.fish.enable = true;
-
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
