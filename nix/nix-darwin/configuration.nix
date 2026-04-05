@@ -1,10 +1,14 @@
 {
   self,
   lib,
+  pkgs,
   ...
 }:
 {
-  users.users.ryu.home = "/Users/ryu";
+  users.users.ryu = {
+    home = "/Users/ryu";
+    shell = pkgs.fish;
+  };
 
   nixpkgs = {
     hostPlatform = "aarch64-darwin";
