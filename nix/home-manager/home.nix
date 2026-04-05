@@ -21,6 +21,7 @@
     gh
     rectangle
     _1password-cli
+    ghostty-bin
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
