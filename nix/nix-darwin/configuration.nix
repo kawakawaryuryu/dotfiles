@@ -121,7 +121,7 @@
       ProgramArguments = [
         "/usr/bin/open"
         "-a"
-        "Terminal"
+        "Ghostty"
       ];
       RunAtLoad = true;
     };
