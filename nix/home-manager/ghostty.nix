@@ -5,7 +5,7 @@
     package = pkgs.ghostty-bin;
     enableFishIntegration = true;
     settings = {
-      command = "fish";
+      command = "/etc/profiles/per-user/ryu/bin/fish";
     };
   };
 }
