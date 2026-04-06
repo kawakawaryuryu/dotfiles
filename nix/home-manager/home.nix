@@ -20,6 +20,7 @@
 
   imports = [
     ./git.nix
+    ./ghostty.nix
   ];
 
   home.packages = with pkgs; [
