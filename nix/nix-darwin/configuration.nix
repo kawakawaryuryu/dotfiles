@@ -114,6 +114,9 @@
           (mkKeyMapping capsLock leftControl)
         ];
     };
+
+    # 起動時のサウンドをオフ
+    startup.chime = false;
   };
 
   # ログイン時に起動
