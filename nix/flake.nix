@@ -24,7 +24,7 @@
       ...
     }:
     {
-      darwinConfigurations."ryumacbookair2026" = nix-darwin.lib.darwinSystem {
+      darwinConfigurations."ryumacbookairm5" = nix-darwin.lib.darwinSystem {
         specialArgs = {
           inherit self nix-homebrew;
         };
