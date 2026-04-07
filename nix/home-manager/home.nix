@@ -29,6 +29,7 @@
     _1password-cli
     ghostty-bin
     codex
+    neovim
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
