@@ -149,6 +149,7 @@
     };
   };
 
+  # sudo権限をTouchIDで確認
   security.pam.services.sudo_local.touchIdAuth = true;
 
   home-manager = {
