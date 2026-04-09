@@ -16,4 +16,8 @@
       }
     ];
   };
+
+  xdg.configFile."fish/conf.d/bobthefish.fish".text = ''
+    set -g theme_newline_cursor yes
+  '';
 }
