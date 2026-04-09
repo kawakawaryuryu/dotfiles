@@ -21,7 +21,7 @@
   imports = [
     ./git.nix
     ./ghostty.nix
-    ./fish.nix
+    #./fish.nix
   ];
 
   home.packages = with pkgs; [
