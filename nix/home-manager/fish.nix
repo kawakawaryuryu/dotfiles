@@ -10,6 +10,7 @@
           owner = "oh-my-fish";
 	  repo = "theme-bobthefish";
 	  rev = "c5efbe05aed81b201454c0ae1190ba91ea1970ac";
+	  # 一度未指定にしてsudo darwin-rebuild switch --flake .を実行してエラーに表示されたsha256値をコピーしている
 	  sha256 = "sha256-12Xd43vy6qQILV/Q5BeoGaul6DsQv5OloCPLXwR6KNU=";
 	};
       }
