@@ -10,6 +10,9 @@
 
       # 背景の透明度
       background-opacity = 0.9;
+
+      # hotkey
+      keybind = global:cmd+backquote=toggle_quick_terminal;
     };
   };
 }
