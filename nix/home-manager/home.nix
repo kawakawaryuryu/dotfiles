@@ -29,6 +29,7 @@
     rectangle
     _1password-cli
     ghostty-bin
+    wezterm
     codex
     neovim
     tmux
