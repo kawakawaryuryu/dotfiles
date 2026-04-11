@@ -22,6 +22,7 @@
     ./git.nix
     ./ghostty.nix
     ./fish.nix
+    ./wezterm/wezterm.nix
   ];
 
   home.packages = with pkgs; [
