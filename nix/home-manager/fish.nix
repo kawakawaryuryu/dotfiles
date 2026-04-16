@@ -19,5 +19,8 @@
 
   xdg.configFile."fish/conf.d/bobthefish.fish".text = ''
     set -g theme_newline_cursor yes
+    set -g theme_nerd_fonts yes
+    set -g theme_color_scheme dark
+    set -g theme_display_hostname yes
   '';
 }
