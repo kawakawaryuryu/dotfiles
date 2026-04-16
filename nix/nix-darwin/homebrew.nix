@@ -27,6 +27,7 @@
       "alfred"
       "dropbox"
       "1password"
+      "hammerspoon"
     ];
   };
 }
