@@ -20,6 +20,10 @@
       upgrade = true;
     };
 
+    brews = [
+      "font-hack-nerd-font"
+    ];
+
     casks = [
       "google-chrome"
       "google-drive"
