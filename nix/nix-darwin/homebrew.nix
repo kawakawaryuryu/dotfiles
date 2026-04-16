@@ -20,10 +20,6 @@
       upgrade = true;
     };
 
-    brews = [
-      "font-hack-nerd-font"
-    ];
-
     casks = [
       "google-chrome"
       "google-drive"
@@ -32,6 +28,7 @@
       "dropbox"
       "1password"
       "hammerspoon"
+      "font-hack-nerd-font"
     ];
   };
 }
