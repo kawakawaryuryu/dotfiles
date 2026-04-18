@@ -33,7 +33,6 @@
     wezterm
     codex
     neovim
-    vimPlugins.LazyVim
     tmux
   ];
 
