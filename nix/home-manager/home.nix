@@ -23,7 +23,7 @@
     ./ghostty.nix
     ./fish.nix
     ./wezterm/wezterm.nix
-    ./neovim.nix
+    ./neovim/neovim.nix
   ];
 
   home.packages = with pkgs; [
