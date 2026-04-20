@@ -7,5 +7,5 @@
     ];
   };
 
-  xdg.configFile."nvim".source = ./config
+  xdg.configFile."nvim".source = ./config;
 }
