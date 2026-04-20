@@ -33,6 +33,8 @@
     wezterm
     codex
     tmux
+    ripgrep
+    ast-grep
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
