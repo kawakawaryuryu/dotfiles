@@ -4,7 +4,8 @@
     enable = true;
     plugins = with pkgs.vimPlugins; [
       LazyVim
-      #which-key-nvim
     ];
   };
+
+  xdg.configFile."nvim".source = ./config
 }
