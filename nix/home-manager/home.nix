@@ -33,7 +33,6 @@
     ghostty-bin
     wezterm
     codex
-    neovim
     tmux
   ];
 
