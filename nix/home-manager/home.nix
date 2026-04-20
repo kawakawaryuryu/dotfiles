@@ -35,6 +35,7 @@
     tmux
     ripgrep
     ast-grep
+    lazygit
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
