@@ -3,9 +3,8 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    # coedexの脆弱性対応のため、新しいバージョンが入っているnixos-unstableを選択するために指定
-    # nixpkgs-unstalbeでも0.119.0以上のバージョンが入ったならcodex用にnixos-unstalbeとするのはやめる
-    nixpkgs-codex.url = "github:NixOS/nixpkgs/nixos-unstable";
+    # 基本的にはnixpkgsを使うが、一部アプリケーションに関してnixos-unstable側にバージョンアップされたものが入ってることもあるため有効化
+    nixpkgs-nixos.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -21,7 +20,7 @@
     {
       self,
       nixpkgs,
-      nixpkgs-codex,
+      nixpkgs-nixos,
       home-manager,
       nix-darwin,
       nix-homebrew,
@@ -30,7 +29,7 @@
     {
       darwinConfigurations."ryumacbookairm5" = nix-darwin.lib.darwinSystem {
         specialArgs = {
-          inherit self nix-homebrew nixpkgs-codex;
+          inherit self nix-homebrew nixpkgs-nixos;
         };
         modules = [
           ./nix-darwin/configuration.nix
