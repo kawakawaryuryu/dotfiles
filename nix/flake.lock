@@ -92,7 +92,7 @@
         "type": "github"
       }
     },
-    "nixpkgs-codex": {
+    "nixpkgs-nixos": {
       "locked": {
         "lastModified": 1776548001,
         "narHash": "sha256-ZSK0NL4a1BwVbbTBoSnWgbJy9HeZFXLYQizjb2DPF24=",
@@ -114,7 +114,7 @@
         "nix-darwin": "nix-darwin",
         "nix-homebrew": "nix-homebrew",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-codex": "nixpkgs-codex"
+        "nixpkgs-nixos": "nixpkgs-nixos"
       }
     }
   },
