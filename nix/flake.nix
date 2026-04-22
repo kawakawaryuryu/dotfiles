@@ -30,7 +30,7 @@
     {
       darwinConfigurations."ryumacbookairm5" = nix-darwin.lib.darwinSystem {
         specialArgs = {
-          inherit self nix-homebrew;
+          inherit self nix-homebrew nixpkgs-codex;
         };
         modules = [
           ./nix-darwin/configuration.nix
