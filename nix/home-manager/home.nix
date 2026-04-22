@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, nixpkgs-codex, ... }:
 let
   system = pkgs.stdenv.hostPlatform.system;
 
