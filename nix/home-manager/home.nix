@@ -1,4 +1,15 @@
 { config, pkgs, ... }:
+let
+  system = pkgs.stdenv.hostPlatform.system;
+
+  codexPkgs = import nixpkgs-codex {
+    inherit system;
+  };
+
+  codexOverlay = final: prev: {
+    codex = codexPkgs.codex;
+  };
+in
 {
   home = {
     username = "ryu";
