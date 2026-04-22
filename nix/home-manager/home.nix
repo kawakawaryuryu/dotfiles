@@ -11,6 +11,8 @@ let
   };
 in
 {
+  nixpkgs.overlays = [ codexOverlay ];
+
   home = {
     username = "ryu";
     homeDirectory = "/Users/ryu";
