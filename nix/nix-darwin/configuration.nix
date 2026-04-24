@@ -2,24 +2,9 @@
   self,
   lib,
   pkgs,
-  nixpkgs-nixos,
   ...
 }:
-let
-  system = pkgs.stdenv.hostPlatform.system;
-
-  nixosPkgs = import nixpkgs-nixos {
-    inherit system;
-  };
-
-  nixosOverlay = final: prev: {
-    # nixpkgsのcodexのバージョンが古いため、nixosのバージョンを選択
-    codex = nixosPkgs.codex;
-  };
-in
 {
-  nixpkgs.overlays = [ nixosOverlay ];
-
   users.users.ryu = {
     home = "/Users/ryu";
     shell = pkgs.fish;

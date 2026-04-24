@@ -3,8 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    # 基本的にはnixpkgsを使うが、一部アプリケーションに関してnixos-unstable側にバージョンアップされたものが入ってることもあるため有効化
-    nixpkgs-nixos.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,7 +18,6 @@
     {
       self,
       nixpkgs,
-      nixpkgs-nixos,
       home-manager,
       nix-darwin,
       nix-homebrew,
@@ -29,7 +26,7 @@
     {
       darwinConfigurations."ryumacbookairm5" = nix-darwin.lib.darwinSystem {
         specialArgs = {
-          inherit self nix-homebrew nixpkgs-nixos;
+          inherit self nix-homebrew;
         };
         modules = [
           ./nix-darwin/configuration.nix
