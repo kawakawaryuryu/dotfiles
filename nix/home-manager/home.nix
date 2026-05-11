@@ -1,4 +1,7 @@
-{ config, pkgs, ... }:
+{ config, pkgs, llm-agents, ... }:
+let
+  llmAgentPkgs = llm-agents.packages.${pkgs.stdenv.hostPlatform.system};
+in
 {
   home = {
     username = "ryu";
@@ -31,11 +34,11 @@
     _1password-cli
     ghostty-bin
     wezterm
-    codex
     tmux
     ripgrep
     ast-grep
     lazygit
+    llmAgentPkgs.codex
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
