@@ -20,6 +20,10 @@
       upgrade = true;
     };
 
+    taps = [
+      "manaflow-ai/cmux"
+    ];
+
     casks = [
       "google-chrome"
       "google-drive"
@@ -29,6 +33,7 @@
       "1password"
       "hammerspoon"
       "font-hack-nerd-font"
+      "cmux"
     ];
   };
 }
