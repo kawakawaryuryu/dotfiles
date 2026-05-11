@@ -131,36 +131,6 @@
     startup.chime = false;
   };
 
-  # ログイン時に起動
-  launchd.user.agents = {
-    chrome.serviceConfig = {
-      ProgramArguments = [
-        "/usr/bin/open"
-        "-a"
-        "Google Chrome"
-      ];
-      RunAtLoad = true;
-    };
-
-    terminal.serviceConfig = {
-      ProgramArguments = [
-        "/usr/bin/open"
-        "-a"
-        "Ghostty"
-      ];
-      RunAtLoad = true;
-    };
-
-    rectangle.serviceConfig = {
-      ProgramArguments = [
-        "/usr/bin/open"
-        "-a"
-        "Rectangle"
-      ];
-      RunAtLoad = true;
-    };
-  };
-
   # sudo権限をTouchIDで確認
   security.pam.services.sudo_local.touchIdAuth = true;
 
