@@ -34,6 +34,7 @@
       "hammerspoon"
       "font-hack-nerd-font"
       "cmux"
+      "codex-app"
     ];
   };
 }
