@@ -30,7 +30,6 @@ in
 
   home.packages = with pkgs; [
     gh
-    rectangle
     _1password-cli
     ghostty-bin
     wezterm
