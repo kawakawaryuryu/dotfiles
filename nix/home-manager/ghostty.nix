@@ -10,6 +10,8 @@
 
       # 背景の透明度
       background-opacity = 0.9;
+      # 選択した箇所を自動でクリップボードにコピー
+      copy-on-select = clipboard;
     };
   };
 }
