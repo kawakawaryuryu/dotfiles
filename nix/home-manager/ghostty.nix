@@ -14,19 +14,19 @@
       copy-on-select = "clipboard";
 
       # split間の移動
-      keybind = cmd+opt+h=goto_split:left
-      keybind = cmd+opt+j=goto_split:down
-      keybind = cmd+opt+k=goto_split:up
-      keybind = cmd+opt+l=goto_split:right
-      
+      keybind = "cmd+opt+h=goto_split:left"
+      keybind = "cmd+opt+j=goto_split:down"
+      keybind = "cmd+opt+k=goto_split:up"
+      keybind = "cmd+opt+l=goto_split:right"
+
       # splitサイズ変更
-      keybind = cmd+ctrl+h=resize_split:left,10
-      keybind = cmd+ctrl+j=resize_split:down,10
-      keybind = cmd+ctrl+k=resize_split:up,10
-      keybind = cmd+ctrl+l=resize_split:right,10
-      
+      keybind = "cmd+ctrl+h=resize_split:left,10"
+      keybind = "cmd+ctrl+j=resize_split:down,10"
+      keybind = "cmd+ctrl+k=resize_split:up,10"
+      keybind = "cmd+ctrl+l=resize_split:right,10"
+
       # splitサイズを均等化
-      keybind = cmd+ctrl+e=equalize_splits
+      keybind = "cmd+ctrl+e=equalize_splits"
     };
   };
 }
