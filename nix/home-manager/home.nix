@@ -38,6 +38,7 @@ in
     ast-grep
     lazygit
     llmAgentPkgs.codex
+    ghq
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
