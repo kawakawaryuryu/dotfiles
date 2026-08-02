@@ -39,6 +39,7 @@ in
     lazygit
     llmAgentPkgs.codex
     ghq
+    temurin-bin-21
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
