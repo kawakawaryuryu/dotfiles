@@ -36,6 +36,7 @@
       "cmux"
       "codex-app"
       "rectangle"
+      "visual-studio-code"
     ];
   };
 }
