@@ -24,6 +24,7 @@ in
     ./git.nix
     ./ghostty.nix
     ./fish.nix
+    ./mise.nix
     ./wezterm/wezterm.nix
     ./neovim/neovim.nix
   ];
